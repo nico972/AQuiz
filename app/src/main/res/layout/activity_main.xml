@@ -28,7 +28,8 @@
             android:layout_row="1"
             android:layout_column="2"
             android:background="@android:color/holo_blue_bright"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:onClick="practice" />
 
         <Button
             android:id="@+id/make"
@@ -38,6 +39,7 @@
             android:layout_column="0"
             android:text="Make a card"
             android:background="@android:color/holo_blue_bright"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:onClick="make" />
     </GridLayout>
 </RelativeLayout>
