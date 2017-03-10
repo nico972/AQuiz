@@ -8,6 +8,43 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.nicolaschoux.admin.aquiz.CreateQuestion">
+    tools:context="com.nicolaschoux.admin.aquiz.CreateQuestion"
+    tools:background="@mipmap/background">
+
+    <TextView
+        android:text="Enter a question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enter_view"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        tools:textColorHighlight="@android:color/darker_gray"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_marginTop="53dp"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/enter_view"
+        android:layout_alignLeft="@+id/enter_view"
+        android:layout_alignStart="@+id/enter_view"
+        android:layout_alignRight="@+id/enter_view"
+        android:layout_alignEnd="@+id/enter_view" />
 
 </RelativeLayout>
