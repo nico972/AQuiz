@@ -11,21 +11,6 @@
     tools:context="com.nicolaschoux.admin.aquiz.CreateQuestion"
     tools:background="@mipmap/background">
 
-    <TextView
-        android:text="Question 1"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:id="@+id/enter_view"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textStyle="normal|bold"
-        android:textAllCaps="true"
-        android:gravity="center"
-        android:textColor="@android:color/black"
-        tools:textColorHighlight="@android:color/darker_gray"
-        android:background="@android:color/holo_blue_bright"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
 
     <Button
         android:text="Add"
@@ -64,6 +49,21 @@
         android:textStyle="normal|bold"
         android:layout_above="@+id/button"
         android:layout_centerInParent="true" />
+
+    <TextView
+        android:text="Question 1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/enter_view"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        tools:textColorHighlight="@android:color/darker_gray"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
