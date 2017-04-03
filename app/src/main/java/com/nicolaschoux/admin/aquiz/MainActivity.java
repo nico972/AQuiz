@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button addQuestion;
+    //Button addQuestion;
 
     public void make(View view){
         Intent intent = new Intent(this, CreateQuestion.class);
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        addQuestion = (Button) findViewById(R.id.addq);
+       /* addQuestion = (Button) findViewById(R.id.addq);
         addQuestion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 View mView = getLayoutInflater().inflate(R.layout.question, null);
 
             }
-        });
+        }); */
     }
 }
 //dfhksdjfhlkjshdf dflkajhsdf
