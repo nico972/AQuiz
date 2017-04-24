@@ -69,7 +69,7 @@ public class CreateQuestion extends AppCompatActivity {
 
 			}
 		});
-
+//
 
 	}
 
