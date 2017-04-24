@@ -1,12 +1,20 @@
 package com.nicolaschoux.admin.aquiz;
 
+import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class CreateQuestion extends AppCompatActivity {
+
+
+	EditText input ;
+	Button ShowBtn;
 	//This is while I am waiting for Jules to actually create the pop up box that will let you enter the question and the answer
     private static String question_entered = "What is the capital of France ? ";
     private static String answer_entered = "Paris";
@@ -18,7 +26,54 @@ public class CreateQuestion extends AppCompatActivity {
 		OnClickQuestion();
 		OnClickAnswer();
 
-    }
+
+
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setTitle("Enter Your Question");
+		builder.setIcon(R.mipmap.ic_launcher);
+		builder.setMessage("Enter your question here");
+
+
+
+		input = new EditText(this);
+
+		builder.setView(input);
+
+		builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				String txt= input.getText().toString();
+				Toast.makeText(getApplicationContext(),txt,Toast.LENGTH_SHORT).show();
+				dialog.dismiss();
+			}
+		});
+
+
+		builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+
+			}
+		});
+
+		// CREATE THE DIALOG
+		final AlertDialog ad = builder.create();
+
+		ShowBtn =(Button) findViewById(R.id.question_button);
+
+		ShowBtn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+
+				ad.show();
+
+			}
+		});
+
+
+	}
+
+
 
 
    public void OnClickQuestion(){
